@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng Cửu Chương</title>
+</head>
+<body>
+<script>
+    let i, j;
+    let result = "<table border =1px>";
+    for (i = 1; i <= 10; i++) {
+        result += "<tr>";
+        for (j = 1; j <= 10; j++) {
+            // if (j === 2)
+            //     continue
+            result += "<td>";
+            let k = j * i;
+            result += + j + "*" + i + "=" + k;
+            result += "</td>";
+        }
+        result += "</tr>";
+    }
+    result += "</table>";
+    document.write(result)
+</script>
+
+</body>
+</html>
